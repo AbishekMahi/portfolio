@@ -66,6 +66,7 @@ body {
     z-index: -1;
     opacity: 10%;
     position: fixed;
+    object-fit: cover;
 }
 .mob-back {
     height: 100%;
@@ -73,6 +74,8 @@ body {
     z-index: -1;
     opacity: 0%;
     position: fixed;
+    object-fit: cover;
+
 }
 
 .logo {
