@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -75,7 +74,6 @@ body {
     opacity: 0%;
     position: fixed;
     object-fit: cover;
-
 }
 
 .logo {
@@ -168,12 +166,14 @@ p {
 }
 
 h1 {
-    font-size: 4.5rem;
+    font-size: 5rem;
+    font-weight: 500;
     margin: 20px auto;
 }
 
 h3 {
     font-size: 3rem;
+    font-weight: 400;
     margin: 0px auto 20px;
 }
 
@@ -193,7 +193,6 @@ span {
     font-size: 1.3rem;
     font-weight: 500;
     font-family: 'Jost', sans-serif;
-    /* color: var(--secondary-color); */
     color: #ffffff;
     border: 0;
     border-radius: 12px;
@@ -227,12 +226,11 @@ p {
 }
 
 h2 {
-    font-size: 3rem;
-    font-family: 'Aladin', cursive;
-    /* font-family: 'Jost', sans-serif; */
+    font-size: 4rem;
+    font-family: 'Alumni Sans', sans-serif;
+    /* font-family: 'Aladin', cursive; */
     color: #9b30ff;
     text-align: center;
-    /* text-decoration: underline; */
 }
 
 .profile-pic {
@@ -248,6 +246,7 @@ h2 {
 }
 
 .top-icons {
+    font-size: 0px;
     height: 0px;
     cursor: pointer;
     margin: 0px;
@@ -273,12 +272,40 @@ h2 {
     justify-content: center;
 }
 .skill-card{
-    height: 300px;
-    width: 250px;
-    margin: 2%;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
     border-radius: 10px;
-/*     backdrop-filter: blur(8px); */
+    /* backdrop-filter: blur(8px); */
     background-color: #ffffff41;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.315), 0 6px 6px rgba(0, 0, 0, 0.322);
-    z-index: -1;
+}
+.skill-card:hover{
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffffff6b;
+    transition: 60ms;
+}
+.skill-img{
+    height: 100px;
+    margin: 20px 10px;
+    border-radius: 10px;
+}
+.cards h3{
+    font-size: 2rem;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+}
+
+#works {
+    margin: 0 1%;
+    padding-top: 7.5%;
+}
+iframe{
+    width: 550px;
+    height: 300px;
+    margin: 10px;
+    background-color: #3d3d3d;
+    /* border-radius: 20px; */
 }

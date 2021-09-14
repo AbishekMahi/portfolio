@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 770px) {
     * {
         margin: 0;
         padding: 0;
@@ -39,32 +39,38 @@
     nav ul li a {
         font-size: 1.1rem;
     }
-    .nav-icons{
+
+    .nav-icons {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         margin-right: 10px;
     }
+
     #daynight {
         width: 30px;
         margin-right: 10px;
         cursor: pointer;
     }
-    .menu-mob{
+
+    .menu-mob {
         display: flex;
     }
+
     .lap-back {
         display: none;
     }
+
     .mob-back {
         display: visible;
         height: 100%;
         width: 100%;
         z-index: -1;
         opacity: 10%;
-        position: fixed;
         object-fit: cover;
+        position: fixed;
     }
+
     .topcontent {
         margin: 2% 5%;
         display: flex;
@@ -130,25 +136,30 @@
         padding-top: 8%;
         text-align: center;
     }
+
     .profile-pic {
         width: 200px;
         margin: 20px 0;
         border-radius: 15%;
     }
+
     .profile-pic:hover {
         width: 210px;
         transition: width 300ms, height 300ms;
     }
+
     p {
         font-size: 1.3rem;
         font-family: 'Jost', sans-serif;
     }
 
+    /* Skills */
     #skills {
-        margin: 0 4%;
-        padding-top: 7.5%;
+        margin: 0 1%;
+        padding-top: 10%;
     }
-    .cards{
+
+    .cards {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -156,33 +167,59 @@
         align-items: center;
         justify-content: center;
     }
-    .skill-card{
-        height: 200px;
-        width: 150px;
-        margin: 5px;
+
+    .skill-card {
+        height: 130px;
+        width: 130px;
+        margin: 10px;
         border-radius: 10px;
-/*         backdrop-filter: blur(8px); */
         background-color: #ffffff38;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-        z-index: -1;
     }
 
-    .menu-mob{
+    .skill-card:hover {
+        margin: 5px;
+        padding: 5px;
+        background-color: #ffffff6b;
+        transition: 60ms;
+    }
+
+    .skill-img {
+        height: 70px;
+        margin: 8px;
+    }
+
+    .cards h3 {
+        font-size: 1.5rem;
+        font-family: 'Jost', sans-serif;
+        margin: 5px;
+    }
+
+    /* Works */
+    #works {
+        margin: 0 4%;
+        padding-top: 10%;
+    }
+
+    .menu-mob {
         position: absolute;
     }
+
     .top-icons {
         height: 30px;
         font-size: 30px;
-        color:var(--secondary-color) ; 
+        color: var(--secondary-color);
         cursor: pointer;
         margin: 10px;
     }
-    .menu_slider{
+
+    .menu_slider {
         /* backdrop-filter: blur(20px); */
-        overflow:auto;
+        overflow: auto;
         overflow-x: hidden;
     }
-    .menu_open{
+
+    .menu_open {
         border-radius: 0 10px 10px 0;
         width: 100%;
         left: 0;
@@ -190,8 +227,8 @@
         position: fixed;
         z-index: 99;
     }
-    
-    .menu_close{
+
+    .menu_close {
         border-radius: 0 10px 10px 0;
         width: 100%;
         height: 400px;
@@ -200,19 +237,32 @@
         position: fixed;
         z-index: 99;
     }
-    #menu_back{
+
+    #menu_back {
         font-size: 30px;
         color: #ffffff;
-        margin: 15px auto 10px 20px ;
+        margin: 15px;
+        position: fixed;
+        right: 20px;
     }
-    .menu_slider ul li{
+
+    .menu-open-top {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: stretch;
+    }
+
+    .menu_slider ul li {
         text-decoration: none;
         text-align: center;
         margin: 15px auto;
         border: 2px;
     }
-    .menu_slider ul li a{
+
+    .menu_slider ul li a {
         font-size: 30px;
     }
+
 
 }
