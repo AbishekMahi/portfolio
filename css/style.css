@@ -274,7 +274,7 @@ h2 {
     width: 250px;
     margin: 2%;
     border-radius: 10px;
-    backdrop-filter: blur(8px);
+/*     backdrop-filter: blur(8px); */
     background-color: #ffffff41;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.315), 0 6px 6px rgba(0, 0, 0, 0.322);
     z-index: -1;
