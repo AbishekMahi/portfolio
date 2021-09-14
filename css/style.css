@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    color: #ffffff;
+    background-color: #9b30ff;
+    text-shadow: #33322f;
+}
+
+/*******   Scrollbar   *******/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(83, 83, 83, 0.5);
+    border-radius: 10px;
+    opacity: 60%;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(77, 77, 77, 0.76);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary-color);
+}
+
+.dark_mode {
+    --primary-color: #ffffff;
+    --secondary-color: #201929;
+}
+
+:root {
+    --primary-color: #222222;
+    --secondary-color: #ffffff;
+}
+
+.top {
+    height: 90%;
+    width: 100%;
+}
+
+.lap-back {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 10%;
+    position: fixed;
+}
+.mob-back {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0%;
+    position: fixed;
+}
+
+.logo {
+    height: 70px;
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+    align-items: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 10;
+    left: 1%;
+    padding: 10px 20px;
+    width: 95%;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    padding: 0;
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2rem;
+}
+
+ul li a:hover {
+    color: #9b30ff;
+}
+
+#daynight {
+    width: 25px;
+    padding: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#daynight:hover {
+    border-radius: 50%;
+    background-color: #a8a8a8;
+}
+
+.topcontent {
+    margin: 1% 5% 0 5%;
+    padding-top: 10%;
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.toptext {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-family: 'Alumni Sans', sans-serif;
+    /* font-family: 'Aladin', cursive; */
+    /* font-family: 'Satisfy', cursive; */
+    /* font-family: 'Sacramento', cursive; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: var(--secondary-color);
+}
+
+h1 {
+    font-size: 4.5rem;
+    margin: 20px auto;
+}
+
+h3 {
+    font-size: 3rem;
+    margin: 0px auto 20px;
+}
+
+span {
+    color: #9b30ff;
+    margin: 20px auto;
+}
+
+.toppara {
+    font-size: 1.5rem;
+    font-family: 'Jost', sans-serif;
+}
+
+.getbtn {
+    margin-top: 4%;
+    padding: 2% 3%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'Jost', sans-serif;
+    /* color: var(--secondary-color); */
+    color: #ffffff;
+    border: 0;
+    border-radius: 12px;
+    background-color: #9b30ff;
+}
+
+.getbtn:hover {
+    background-color: #6f1cbd;
+    box-shadow: #201929;
+}
+
+.topimg {
+    width: 50%;
+}
+
+.img1 {
+    width: 100%;
+    min-width: 75%;
+    margin: 0 auto 5% auto;
+}
+
+#about {
+    margin: 0 15%;
+    padding-top: 7.5%;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+    font-family: 'Jost', sans-serif;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Aladin', cursive;
+    /* font-family: 'Jost', sans-serif; */
+    color: #9b30ff;
+    text-align: center;
+    /* text-decoration: underline; */
+}
+
+.profile-pic {
+    width: 250px;
+    margin: 20px;
+    border-radius: 250px;
+}
+
+.profile-pic:hover {
+    width: 260px;
+    /* margin: 15px; */
+    transition: width 300ms, height 300ms;
+}
+
+.top-icons {
+    height: 0px;
+    cursor: pointer;
+    margin: 0px;
+}
+.menu_slider{
+    backdrop-filter: blur(20px);
+    width: 0px;
+    height: 0;
+    overflow:auto;
+    overflow-x: hidden;
+}
+
+#skills {
+    margin: 0 8%;
+    padding-top: 7.5%;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.skill-card{
+    height: 300px;
+    width: 250px;
+    margin: 2%;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    background-color: #ffffff41;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.315), 0 6px 6px rgba(0, 0, 0, 0.322);
+    z-index: -1;
+}

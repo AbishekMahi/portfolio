@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abishek Mahi - Portfolio</title>
+    <link rel="icon" type="icon" href="images/Abi icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+    <img class="lap-back" src="images/back.jpg" alt="">
+    <img class="mob-back" src="images/back mob.jpg" alt="">
+    <div class="top">
+
+        <nav>
+            <a class="logo" href=""><img src="images/Abi icon.png" alt="Abishek_Mahi_logo"></a>
+            <ul>
+                <!-- <li><a href="index.html#home">Home</a></li> -->
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#works">Works</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <img src="images/sun.png" id="daynight">
+                <i id="menu" class="top-icons fas fa-bars"></i>
+                <!-- <img class=""  src="/images/menu.png" alt=""> -->
+            </div>
+        </nav>
+
+        <div class="menu_slider menu_close">
+            <i id="menu_back" class="fas fa-arrow-left"></i>
+            <a class="logo" href=""><img src="images/Abi icon.png" alt="Abishek_Mahi_logo"></a>
+            <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#works">Works</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="home" class="topcontent">
+            <div class="toptext">
+                <h3>Hello!</h3>
+                <h1>I'm <span> Abishek.</span></h1>
+                <p class="toppara">UI/UX Designer, Web Developer, and App Developer.</p>
+                <a href="Abishek RESUME.pdf"><button class="getbtn">Get my Resume</button></a>
+            </div>
+            <div class="topimg">
+                <img class="img1" src="images/developer.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <h2>About Me</h2>
+        <img class="profile-pic" src="https://pbs.twimg.com/profile_images/1237090326780596224/2JR-LxGS.jpg"
+            alt="profile image">
+        <p>I'm a Student Passionate final year student with excellent problem solving, teamwork,
+            and communication skills. Seeking a Fulfilling position as web development or any kind of fields under
+            IT sectors with a view to utilize and enhance my software skills towards professional growth, but also
+            open to any software positions to learn and implement new skills and technologies.</p>
+    </div>
+
+    <div id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="cards">
+            <div class="skill-card">
+                <h3>html</h3>
+            </div>
+            <div class="skill-card">
+                <h3>html</h3>
+            </div>
+            <div class="skill-card">
+                <h3>html</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>Things will change If you think in a positive way.</h3>
+        <p class="contact-me">No matter where we find Ourselves Let's always keep in touch.</p>
+        <a class="btn-2" href="mailto:abishekmas0708@gmail.com">CONTACT ME</a>
+    </div>
+    <div class="bottom-container">
+        <a class="footer-link" href="www.linkedin.com/in/ishwarya-s-218451199">LinkedIn</a>
+        <a class="footer-link" href="https://twitter.com/ItsmeIshwarya">Twitter</a>
+        <a class="footer-link" href="https://github.com/iamIshwarya">Github</a>
+        <p class="copyright">© 2021 Abishek Mahendhiran.</p>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/0b889a295e.js" crossorigin="anonymous"></script>
+    <script>
+        var daynight = document.getElementById("daynight");
+        daynight.onclick = function () {
+            document.body.classList.toggle("dark_mode");
+            if (document.body.classList.contains("dark_mode")) {
+                daynight.src = "images/moon.png"
+            } else {
+                daynight.src = "images/sun.png"
+            }
+        }
+    </script>
+    <script>
+        // access menu button
+        const menuBtn = document.querySelector('#menu');
+        const menuSection = document.querySelector('.menu_slider');
+
+        menuBtn.addEventListener('click', () => {
+            menuSection.classList.add('menu_open');
+        })
+    </script>
+</body>
+
+</html>

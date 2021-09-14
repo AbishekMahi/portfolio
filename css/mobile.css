@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+@media only screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .logo {
+        height: 70px;
+    }
+
+    .logo img {
+        height: 60px;
+        width: 60px;
+        margin: 5px;
+        align-items: center;
+    }
+
+    nav {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        padding: 0;
+        flex: 1;
+        text-align: right;
+        display: none;
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+    }
+    .nav-icons{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-right: 10px;
+    }
+    #daynight {
+        width: 30px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .menu-mob{
+        display: flex;
+    }
+    .lap-back {
+        display: none;
+    }
+    .mob-back {
+        display: visible;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 10%;
+        position: fixed;
+    }
+    .topcontent {
+        margin: 2% 5%;
+        display: flex;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .toptext {
+        width: 100%;
+        text-align: center;
+        margin: 15% auto 5% auto;
+        font-family: 'Alumni Sans', sans-serif;
+        /* font-family: 'Sacramento', cursive; */
+    }
+
+    h1,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: var(--secondary-color);
+    }
+
+    h1 {
+        /* font-size: 3rem; */
+        margin: 20px auto;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        margin: 20px auto;
+    }
+
+    span {
+        color: #9b30ff;
+        margin: 20px auto;
+    }
+
+    .getbtn {
+        padding: 2% 3%;
+        /* font-size: 1rem; */
+        font-weight: 400;
+        border: 0;
+        border-radius: 15px;
+    }
+
+    .topimg {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+
+    }
+
+    .img1 {
+        width: 95%;
+        min-width: 75%;
+        margin: auto;
+    }
+
+    #about {
+        margin: 0 10%;
+        padding-top: 8%;
+        text-align: center;
+    }
+    .profile-pic {
+        width: 200px;
+        margin: 20px 0;
+        border-radius: 15%;
+    }
+    .profile-pic:hover {
+        width: 210px;
+        transition: width 300ms, height 300ms;
+    }
+    p {
+        font-size: 1.3rem;
+        font-family: 'Jost', sans-serif;
+    }
+
+    #skills {
+        margin: 0 4%;
+        padding-top: 7.5%;
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .skill-card{
+        height: 200px;
+        width: 150px;
+        margin: 5px;
+        border-radius: 10px;
+        backdrop-filter: blur(8px);
+        background-color: #ffffff38;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        z-index: -1;
+    }
+
+    .menu-mob{
+        position: absolute;
+    }
+    .top-icons {
+        height: 30px;
+        font-size: 30px;
+        color:var(--secondary-color) ; 
+        cursor: pointer;
+        margin: 10px;
+    }
+    .menu_slider{
+        /* backdrop-filter: blur(20px); */
+        overflow:auto;
+        overflow-x: hidden;
+    }
+    .menu_open{
+        border-radius: 0 10px 10px 0;
+        width: 100%;
+        left: 0;
+        top: 0;
+        position: fixed;
+        z-index: 99;
+    }
+    
+    .menu_close{
+        border-radius: 0 10px 10px 0;
+        width: 100%;
+        height: 400px;
+        right: 100%;
+        top: 0;
+        position: fixed;
+        z-index: 99;
+    }
+    #menu_back{
+        font-size: 30px;
+        color: #ffffff;
+        margin: 15px auto 10px 20px ;
+    }
+    .menu_slider ul li{
+        text-decoration: none;
+        text-align: center;
+        margin: 15px auto;
+        border: 2px;
+    }
+    .menu_slider ul li a{
+        font-size: 30px;
+    }
+    /* .menu-icons{
+        margin: 5px;
+        color: #ffffff;
+    } */
+    /* .menu-line{
+        margin: 4% 0 0 ;
+        border-color: rgb(255, 255, 255);
+        border-style: none;
+        border-top-style: solid;
+        border-width: 2px;
+        width: 80%;
+    } */
+
+}
