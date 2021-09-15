@@ -84,7 +84,6 @@
         text-align: center;
         margin: 15% auto 5% auto;
         font-family: 'Alumni Sans', sans-serif;
-        /* font-family: 'Sacramento', cursive; */
     }
 
     h1,
@@ -147,7 +146,7 @@
         min-width: 75%;
         margin: auto;
     }
-
+/* about */
     #about {
         margin: 0 10%;
         padding-top: 8%;
@@ -217,13 +216,15 @@
         margin: 0 4%;
         padding-top: 10%;
     }
-    iframe{
-        width: 600px;
+
+    iframe {
+        width: 100%;
         height: 300px;
-        margin: 10px;
+        margin: 10px 0;
         background-color: #3d3d3d;
     }
 
+    /* menu */
     .menu-mob {
         position: absolute;
     }
@@ -286,6 +287,11 @@
         font-size: 30px;
     }
 
+    /* contact */
+    form {
+        margin: auto 10%;
+    }
+
     /* footer */
     .bottom {
         backdrop-filter: blur(20px);
@@ -310,9 +316,6 @@
         margin: 20px;
     }
 
-    .bottom a:hover {
-        color: #9b30ff;
-    }
 
     .bottom p {
         text-align: center;
