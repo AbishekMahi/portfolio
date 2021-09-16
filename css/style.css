@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
@@ -21,14 +20,17 @@
 ::-webkit-scrollbar {
     width: 10px;
 }
+
 ::-webkit-scrollbar-track {
     border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb {
     background: rgba(83, 83, 83, 0.5);
     border-radius: 10px;
     opacity: 60%;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background-color: rgba(77, 77, 77, 0.76);
 }
@@ -61,6 +63,7 @@ body {
     position: fixed;
     object-fit: cover;
 }
+
 
 .mob-back {
     height: 100%;
@@ -192,7 +195,9 @@ span {
     color: #ffffff;
     border: 0;
     border-radius: 8px;
+    cursor: pointer;
     background-color: #9b30ff;
+    transition: 300ms;
 }
 
 .getbtn:hover {
@@ -233,11 +238,11 @@ h2 {
     width: 250px;
     margin: 20px;
     border-radius: 250px;
+    transition: 300ms;
 }
 
 .profile-pic:hover {
-    width: 260px;
-    transition: width 300ms, height 300ms;
+    transform: scale(1.1);
 }
 
 .more-btn {
@@ -251,6 +256,8 @@ h2 {
     text-decoration: none;
     border: 2px solid #9b30ff;
     border-radius: 12px;
+    cursor: pointer;
+    transition: 300ms;
     background-color: transparent;
 }
 
@@ -304,6 +311,7 @@ h2 {
     margin: 20px;
     border-radius: 10px;
     background-color: #ffffff41;
+    transition: 300ms;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.315), 0 6px 6px rgba(0, 0, 0, 0.322);
 }
 
@@ -311,7 +319,7 @@ h2 {
     margin: 10px;
     padding: 10px;
     background-color: #ffffff6b;
-    transition: 60ms;
+    /* transition: 60ms; */
 }
 
 .skill-img {
@@ -332,12 +340,52 @@ h2 {
     padding-top: 7.5%;
 }
 
-iframe {
+.works-img {
     width: 550px;
-    height: 300px;
     margin: 10px;
-    background-color: #3d3d3d;
+    background-color: black;
+    transition: 300ms;
+
 }
+
+.work-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms;
+}
+
+.work-card a {
+    position: absolute;
+}
+
+
+.site-btn{
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+    color: #ffffff;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #9b30ff;
+}
+
+.site-btn:hover {
+    background-color: #6f1cbd;
+    box-shadow: #201929;
+}
+
+.button {
+    display: none;
+}
+
+img:hover+.button {
+    display: block;
+}
+
 
 /* contact */
 #contact {
@@ -363,9 +411,11 @@ textarea {
     color: #222222;
     font-family: 'Jost', sans-serif;
 }
-label{
-    color:var(--secondary-color) ;
+
+label {
+    color: var(--secondary-color);
 }
+
 .form-content {
     font-size: 20px;
     display: flex;
@@ -398,7 +448,7 @@ label{
     justify-content: space-around;
 }
 
-.bottom .fab{
+.bottom .fab,.fas {
     margin-right: 8px;
 }
 
@@ -413,19 +463,24 @@ label{
 .li:hover {
     color: #0077b5;
 }
-.tw:hover{
+
+.tw:hover {
     color: #1DA1F2;
 }
-.db:hover{
+
+.db:hover {
     color: #ea4c89;
 }
-.gh:hover{
+
+.gh:hover {
     color: #171515;
 }
-.ig:hover{
+
+.ig:hover {
     color: #ff026c;
 }
-.fb:hover{
+
+.fb:hover {
     color: #4267B2;
 }
 
@@ -433,4 +488,14 @@ label{
     text-align: center;
     font-size: 15px;
     padding: 20px 20px 10px;
+}
+
+.thanks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Jost', sans-serif;
+    width: 100%;
+    height: 100vh;
 }

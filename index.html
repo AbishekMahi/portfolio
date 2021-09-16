@@ -9,7 +9,8 @@
     <link rel="icon" type="icon" href="images/Abi icon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
-    <meta name="description" content="Abishek Mahi is an Independent artist, Web Developer, UI/UX Designer and App Developer." />
+    <meta name="description"
+        content="Abishek Mahi is an Independent artist, Web Developer, UI/UX Designer and App Developer." />
     <meta name="keywords"
         content="Abishek Mahi,Abishek, artist Abishek Mahi, Abishek Mahi bio, Abishek Mahendhiran, Abishek Mahi, About Abishek Mahi, musician, Independent artist, music director Abishek Mahi, indian music artist">
     <meta name="theme-color" content="#9b30ff">
@@ -64,8 +65,6 @@
                 <h3 id="autoGreetings"></h3>
                 <h1>I'm <span>Abishek.</span></h1>
                 <p class="toppara">UI/UX Designer, Web Developer, and App Developer.</p>
-                <!-- <a href="Abishek RESUME.pdf"><button class="more-btn"><img src="images/dribbble.png"
-                            alt="">Dribbble</button></a> -->
                 <a href="Abishek RESUME.pdf"><button class="getbtn">Get Resume</button></a>
 
             </div>
@@ -86,6 +85,7 @@
             open to any software positions to learn and implement new skills and technologies.</p>
         <a href="https://g.co/kgs/PVmCHF"><button class="more-btn">Know More...</button></a>
     </div>
+
     <!-- Skills -->
     <div id="skills" class="skills">
         <h2>Skills</h2>
@@ -127,28 +127,47 @@
     <div id="works">
         <h2>Works</h2>
         <div class="cards">
-            <iframe src="https://isaitamilrecords.com/" loading="lazy" frameborder="0"></iframe>
-            <iframe src="https://isaitamilrecords.github.io/kmmanojkumar/" loading="lazy" frameborder="0"></iframe>
-            <iframe src="https://voxxon-alpha.web.app/" loading="lazy" frameborder="0"></iframe>
+            <div class="work-card">
+                <img class="works-img" src="images/itr.png" alt="isai tamil records">
+                <a class="button" href="https://isaitamilrecords.com/"><button class="site-btn"><i
+                            class="fas fa-globe"></i>View site</button></a>
+            </div>
+            <div class="work-card">
+                <img class="works-img" src="images/voxxon home.png" alt="voxxon home">
+                <a class="button" href="https://voxxon-alpha.web.app"><button class="site-btn"><i
+                            class="fas fa-globe"></i>View site</button></a>
+            </div>
+            <div class="work-card">
+                <img class="works-img" src="images/voxxon player.png" alt="voxxon player">
+                <a class="button" href="https://voxxon-alpha.web.app/webapp.html"><button class="site-btn"><i
+                            class="fas fa-globe"></i>View site</button></a>
+            </div>
+            <div class="work-card">
+                <img class="works-img" src="images/kmm.png" alt="K.M.Manoj">
+                <a class="button" href="https://isaitamilrecords.github.io/kmmanojkumar/"><button class="site-btn"><i
+                            class="fas fa-globe"></i>View
+                        site</button></a>
+            </div>
+
+
         </div>
     </div>
 
     <div id="contact">
         <h2>Contact</h2>
         <p>Things will change If you think in a positive way.</p>
-        <form action="mailto:abishekmas0807@gmail.com" autocomplete="on">
+        <form action="mailto:abishekmas0807@gmail.com?subject=Messsege For You" autocomplete="on" method="POST" enctype="text/plain" onsubmit="location.href='thanks.html';">
             <div class="form-content">
                 <label for="email">Email:</label>
-                <input type="email" required placeholder="Enter email">
+                <input name="Your Email " type="email" required placeholder="Enter email"> 
             </div>
             <div class="form-content">
                 <label for="mobile">Mobile Number:</label>
-                <input type="tel" required placeholder="Enter mobile number">
+                <input name="Phone Number " type="tel" required placeholder="Enter mobile number">
             </div>
             <div class="form-content">
                 <label for="messege">Messsge:</label>
-                <textarea name="message" required rows="5" placeholder="Write your message here..." cols="4"></textarea>
-                <!-- <input type="text" placeholder="Write Your messege" rows="5" name="" id="">  -->
+                <textarea name="Message " required rows="5" placeholder="Write your message here..." cols="4"></textarea>
             </div>
             <div class="form-content submit">
                 <input class="more-btn" type="submit" value="Submit">
@@ -157,13 +176,17 @@
     </div>
     <div class="bottom">
         <div class="footlink">
-            <a class="footer-link li" href="https://www.linkedin.com/in/abishekmahi"><i class="fab fa-linkedin"></i>LinkedIn</a>
-            <a class="footer-link tw" href="https://twitter.com/AbishekMahi0708"><i class="fab fa-twitter" aria-hidden="true"></i>Twitter</a>
-            <a class="footer-link db" href="https://dribbble.com/abishekmahi"><i class="fab fa-dribbble"></i>Dribbble</a>
+            <a class="footer-link li" href="https://www.linkedin.com/in/abishekmahi"><i
+                    class="fab fa-linkedin"></i>LinkedIn</a>
+            <a class="footer-link tw" href="https://twitter.com/AbishekMahi0708"><i class="fab fa-twitter"
+                    aria-hidden="true"></i>Twitter</a>
+            <a class="footer-link db" href="https://dribbble.com/abishekmahi"><i
+                    class="fab fa-dribbble"></i>Dribbble</a>
             <a class="footer-link gh" href="https://github.com/AbishekMahi"><i class="fab fa-github"></i>Github</a>
-            <a class="footer-link ig" href="https://www.instagram.com/abishek_mahi"><i class="fab fa-instagram"></i>Instagram</a>
-            <!-- <a class="footer-link" href="https://www.youtube.com/channel/UC7peeGOGIF_8AKcBqO3IemA">YouTube</a> -->
-            <a class="footer-link fb" href="https://facebook.com/AbishekMahi0708"><i class="fab fa-facebook"></i>Facebook</a>
+            <a class="footer-link ig" href="https://www.instagram.com/abishek_mahi"><i
+                    class="fab fa-instagram"></i>Instagram</a>
+            <a class="footer-link fb" href="https://facebook.com/AbishekMahi0708"><i
+                    class="fab fa-facebook"></i>Facebook</a>
         </div>
         <p>Copyright © 2021 Abishek Mahendhiran. All Rights Reserved.</p>
     </div>
@@ -214,7 +237,7 @@
             greet = 'Good Evening!';
         document.getElementById('autoGreetings').innerHTML = '<h3>' + greet + '</h3>';
     </script>
-<!-- 
+    <!-- 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script>
         //  typing text animation script
