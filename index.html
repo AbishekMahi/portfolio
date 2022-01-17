@@ -188,7 +188,7 @@
             <a class="footer-link fb" href="https://facebook.com/AbishekMahi0708"><i
                     class="fab fa-facebook"></i>Facebook</a>
         </div>
-        <p>Copyright © 2021 Abishek Mahendhiran. All Rights Reserved.</p>
+        <p>Copyright © <g id="year"></g> Abishek Mahendhiran. All Rights Reserved.</p>
     </div>
 
     <!-- <div class="container">
@@ -236,6 +236,11 @@
         else if (hrs >= 17 && hrs <= 24)
             greet = 'Good Evening!';
         document.getElementById('autoGreetings').innerHTML = '<h3>' + greet + '</h3>';
+    </script>
+        <script>
+        const d = new Date();
+        let year = d.getFullYear();
+        document.getElementById("year").innerHTML = year;
     </script>
     <!-- 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
