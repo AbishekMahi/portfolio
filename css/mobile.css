@@ -218,7 +218,22 @@
     }
     .works-img {
         width: 100%;
-        margin: 10px;
+        margin: 10px 0;
+    }
+    .work-card a {
+        position: static;
+        cursor: pointer;
+    }
+    .cards-mob{
+        display: block;
+    }
+    .cards-lap{
+        display: none;
+    }
+    .weblink {
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
     }
     .site-btn{
         margin: 0;
