@@ -333,10 +333,10 @@
 
     .bottom a {
         width: 120px;
-        font-size: 18px;
+        font-size: 20px;
         text-align: center;
         color: var(--secondary-color);
-        margin: 20px;
+        margin: 15px;
     }
 
 
