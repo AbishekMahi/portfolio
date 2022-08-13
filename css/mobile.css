@@ -6,7 +6,6 @@
         padding: 0;
     }
 
-
     .logo {
         height: 70px;
     }
@@ -14,7 +13,7 @@
     .logo img {
         height: 60px;
         width: 60px;
-        margin: 5px;
+        margin: 10px;
         align-items: center;
     }
 
@@ -83,7 +82,10 @@
         width: 100%;
         text-align: center;
         margin: 15% auto 5% auto;
-        font-family: 'Alumni Sans', sans-serif;
+    }
+
+    .toppara {
+        font-size: 18px;
     }
 
     h1,
@@ -95,13 +97,13 @@
     }
 
     h1 {
-        /* font-size: 3rem; */
-        margin: 20px auto;
+        font-size: 3.5rem;
+        margin: 10px auto;
     }
 
     h3 {
-        font-size: 2.5rem;
-        margin: 20px auto;
+        font-size: 2rem;
+        margin: 20px auto 10px;
     }
 
     span {
@@ -146,7 +148,8 @@
         min-width: 75%;
         margin: auto;
     }
-/* about */
+
+    /* about */
     #about {
         margin: 0 10%;
         padding-top: 8%;
@@ -191,13 +194,12 @@
         border-radius: 10px;
         background-color: #ffffff38;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        transition: 300ms;
     }
 
     .skill-card:hover {
-        margin: 5px;
-        padding: 5px;
         background-color: #ffffff6b;
-        transition: 60ms;
+        transform: scale(1.1);
     }
 
     .skill-img {
@@ -216,26 +218,32 @@
         margin: 0 4%;
         padding-top: 10%;
     }
+
     .works-img {
         width: 100%;
         margin: 10px 0;
     }
+
     .work-card a {
         position: static;
         cursor: pointer;
     }
-    .cards-mob{
+
+    .cards-mob {
         display: block;
     }
-    .cards-lap{
+
+    .cards-lap {
         display: none;
     }
+
     .weblink {
         margin: 0;
         padding: 0;
         cursor: pointer;
     }
-    .site-btn{
+
+    .site-btn {
         margin: 0;
         padding: 5px 10px;
         font-size: 1.3rem;
