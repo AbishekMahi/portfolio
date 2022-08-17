@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 765px) {
     * {
         margin: 0;
         padding: 0;
@@ -88,6 +88,11 @@
         font-size: 20px;
     }
 
+    p {
+        font-size: 17px;
+        font-family: 'Jost', sans-serif;
+    }
+
     h1,
     h3,
     h4,
@@ -111,29 +116,8 @@
         margin: 20px auto;
     }
 
-    .getbtn {
-        padding: 5px 8px;
-        font-weight: 400;
-        border: 0;
-        border-radius: 8px;
-    }
-
-    .more-btn {
-        padding: 5px 8px;
-        font-size: 1.3rem;
-        font-weight: 500;
-        font-family: 'Jost', sans-serif;
-        color: #9b30ff;
-        text-decoration: none;
-        border: 2px solid #9b30ff;
-        border-radius: 12px;
-        background-color: transparent;
-    }
-
     .more-btn:hover {
-        border: 2px solid #9b30ff00;
         color: #fff;
-        background-color: #9b30ff;
     }
 
     .topimg {
@@ -151,7 +135,7 @@
 
     /* about */
     #about {
-        margin: 0 10%;
+        margin: 0 5%;
         padding-top: 8%;
         text-align: center;
     }
@@ -160,16 +144,28 @@
         width: 200px;
         margin: 20px 0;
         border-radius: 15%;
+        transition: 300ms;
     }
 
     .profile-pic:hover {
-        width: 210px;
-        transition: width 300ms, height 300ms;
+        /* width: 210px;
+        transition: width 300ms, height 300ms; */
+        transform: scale(1.1);
     }
 
-    p {
-        font-size: 1.3rem;
-        font-family: 'Jost', sans-serif;
+    .lottie-row {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .lottie-row a {
+        margin: auto 5px;
+    }
+
+    .abt-lottie {
+        margin: auto 8px;
+        height: 65px;
+        width: 65px;
     }
 
     /* Skills */
@@ -208,7 +204,7 @@
     }
 
     .cards h3 {
-        font-size: 1.5rem;
+        font-size: 18px;
         font-family: 'Jost', sans-serif;
         margin: 5px;
     }
@@ -219,40 +215,20 @@
         padding-top: 10%;
     }
 
-    .works-img {
-        width: 100%;
-        margin: 10px 0;
+    .container {
+        position: relative;
+        width: 90%;
+        margin: 10px;
+        transition: 300ms;
     }
 
-    .work-card a {
-        position: static;
-        cursor: pointer;
-    }
-
-    .cards-mob {
-        display: block;
-    }
-
-    .cards-lap {
-        display: none;
-    }
-
-    .weblink {
-        margin: 0;
-        padding: 0;
-        cursor: pointer;
+    .container:hover .middle {
+        transform: scale(1.2);
     }
 
     .site-btn {
-        margin: 0;
-        padding: 5px 10px;
-        font-size: 1.3rem;
-        font-weight: 400;
-        font-family: 'Jost', sans-serif;
-        color: #ffffff;
-        border: 0;
-        border-radius: 8px;
-        background-color: #9b30ff;
+        padding: 8px 20px;
+        font-size: 16px;
     }
 
     /* menu */
@@ -319,8 +295,24 @@
     }
 
     /* contact */
+    #contact p {
+        text-align: center;
+        margin: auto 15px !important;
+    }
+
+    .form-row {
+        width: 100%;
+        padding: 0;
+    }
+
+    .msg-lottie {
+        width: 90%;
+        margin: auto;
+    }
+
     form {
-        margin: auto 4%;
+        width: 95%;
+        margin: auto;
     }
 
     /* footer */

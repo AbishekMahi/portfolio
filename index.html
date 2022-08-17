@@ -26,211 +26,215 @@
     <link rel="stylesheet" href="css/mobile.css">
 </head>
 
-<body>
-    <!-- background img -->
-    <img class="lap-back" src="images/back.jpg" alt="">
-    <img class="mob-back" src="images/back mob.jpg" alt="">
+<body onload="loader()">
+    <div id="loader">
+        <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_a2chheio.json" background="transparent"
+            speed="1" loop autoplay>
+        </lottie-player>
+    </div>
+    <div style="display:none;" id="main">
 
-    <!-- home -->
-    <div class="top">
-        <!-- navbar -->
-        <nav>
-            <a class="logo" href=""><img src="images/Abi icon.png" title="Abishek Mahi Logo"
-                    alt="Abishek_Mahi_logo"></a>
-            <ul>
-                <li><a title="About" href="index.html#about">About</a></li>
-                <li><a title="Skills" href="index.html#skills">Skills</a></li>
-                <li><a title="Works" href="index.html#works">Works</a></li>
-                <li><a title="Contact" href="index.html#contact">Contact</a></li>
-            </ul>
-            <div title="Change Theme" class="nav-icons">
-                <img src="images/sun.png" id="daynight">
-                <i id="menu" class="top-icons fas fa-bars"></i>
-            </div>
-        </nav>
+        <!-- background img -->
+        <img class="lap-back" src="images/back.jpg" alt="">
+        <img class="mob-back" src="images/back mob.jpg" alt="">
 
-        <div class="menu_slider menu_close">
-            <div class="menu-open-top">
-                <a class="logo" href=""><img src="images/Abi icon.png" alt="Abishek_Mahi_logo"></a>
-                <i id="menu_back" class="fas fa-times"></i>
+        <!-- home -->
+        <div class="top">
+            <!-- navbar -->
+            <nav>
+                <a class="logo" href=""><img src="images/Abi icon.png" title="Abishek Mahi Logo"
+                        alt="Abishek_Mahi_logo"></a>
+                <ul>
+                    <li><a title="About" href="index.html#about">About</a></li>
+                    <li><a title="Skills" href="index.html#skills">Skills</a></li>
+                    <li><a title="Works" href="index.html#works">Works</a></li>
+                    <li><a title="Contact" href="index.html#contact">Contact</a></li>
+                </ul>
+                <div title="Change Theme" class="nav-icons">
+                    <img src="images/sun.png" id="daynight">
+                    <i id="menu" class="top-icons fas fa-bars"></i>
+                </div>
+            </nav>
+
+            <div class="menu_slider menu_close">
+                <div class="menu-open-top">
+                    <a class="logo" href=""><img src="images/Abi icon.png" alt="Abishek_Mahi_logo"></a>
+                    <i id="menu_back" class="fas fa-times"></i>
+                </div>
+                <ul>
+                    <li><a title="About" href="index.html#about">About</a></li>
+                    <li><a title="Skills" href="index.html#skills">Skills</a></li>
+                    <li><a title="Works" href="index.html#works">Works</a></li>
+                    <li><a title="Contact" href="index.html#contact">Contact</a></li>
+                </ul>
             </div>
-            <ul>
-                <li><a title="About" href="index.html#about">About</a></li>
-                <li><a title="Skills" href="index.html#skills">Skills</a></li>
-                <li><a title="Works" href="index.html#works">Works</a></li>
-                <li><a title="Contact" href="index.html#contact">Contact</a></li>
-            </ul>
+
+            <!-- topcontent -->
+            <div id="home" class="topcontent">
+                <div class="toptext">
+                    <h3 id="autoGreetings"></h3>
+                    <h1>I'm <span>Abishek Mahi</span></h1>
+                    <p class="toppara">UI/UX Designer, Independent Artist, Web and App Developer.</p>
+                    <a title="Get Resume" href="Abishek RESUME.pdf"><button class="getbtn">Get Resume</button></a>
+
+                </div>
+                <div class="topimg">
+                    <img class="img1" src="images/developer.png" alt="">
+                </div>
+            </div>
         </div>
 
-        <!-- topcontent -->
-        <div id="home" class="topcontent">
-            <div class="toptext">
-                <h3 id="autoGreetings"></h3>
-                <h1>I'm <span>Abishek Mahi</span></h1>
-                <p class="toppara">UI/UX Designer, Web Developer, and App Developer.</p>
-                <a title="Get Resume" href="Abishek RESUME.pdf"><button class="getbtn">Get Resume</button></a>
+        <!-- About -->
+        <div id="about">
+            <h2>About Me</h2>
+            <img title="Abishek Mahi" class="profile-pic"
+                src="https://pbs.twimg.com/profile_images/1237090326780596224/2JR-LxGS.jpg" alt="profile image">
+            <div class="lottie-row">
+                <a target="_blank" title="YouTube" href="https://www.youtube.com/c/AbishekMahi/">
+                    <lottie-player class="abt-lottie" src="https://assets3.lottiefiles.com/packages/lf20_qe6rfoqh.json"
+                        background="transparent" speed=".6" loop autoplay>
+                    </lottie-player>
+                </a>
+                <a target="_blank" title="Spotify" href="https://open.spotify.com/artist/6qub72ZQpOzA200OojDwg3">
+                    <lottie-player class="abt-lottie" src="https://assets4.lottiefiles.com/packages/lf20_ugylqlzx.json"
+                        background="transparent" speed=".7" loop autoplay>
+                    </lottie-player>
+                </a>
+                <a target="_blank" title="SoundCloud" href="https://soundcloud.com/abishekmahi">
+                    <lottie-player class="abt-lottie" src="https://assets6.lottiefiles.com/packages/lf20_05kpcpwb.json"
+                        background="transparent" speed="1" loop autoplay>
+                    </lottie-player>
+                </a>
+            </div>
 
-            </div>
-            <div class="topimg">
-                <img class="img1" src="images/developer.png" alt="">
-            </div>
+            <p>I'm a Student Passionate final year student with excellent problem solving, teamwork,
+                and communication skills. Seeking a Fulfilling position as web development or any kind of fields under
+                IT sectors with a view to utilize and enhance my software skills towards professional growth, but also
+                open to any software positions to learn and implement new skills and technologies.</p>
+            <a target="_blank" title="Know More" href="https://g.co/kgs/PVmCHF"><button class="more-btn">Know
+                    More</button></a>
         </div>
-    </div>
 
-    <!-- About -->
-    <div id="about">
-        <h2>About Me</h2>
-        <img title="Abishek Mahi" class="profile-pic" src="https://pbs.twimg.com/profile_images/1237090326780596224/2JR-LxGS.jpg"
-            alt="profile image">
-        <p>I'm a Student Passionate final year student with excellent problem solving, teamwork,
-            and communication skills. Seeking a Fulfilling position as web development or any kind of fields under
-            IT sectors with a view to utilize and enhance my software skills towards professional growth, but also
-            open to any software positions to learn and implement new skills and technologies.</p>
-        <a target="_blank" title="Know More" href="https://g.co/kgs/PVmCHF"><button class="more-btn">Know More...</button></a>
-    </div>
-
-    <!-- Skills -->
-    <div id="skills" class="skills">
-        <h2>Skills</h2>
-        <div class="cards">
-            <div title="Flutter" class="skill-card">
-                <img class="skill-img" src="images/flutter.png" alt="Flutter Logo">
-                <h3>Flutter</h3>
-            </div>
-            <div title="HTML" class="skill-card">
-                <img class="skill-img" src="images/html-5.png" alt="HTML Logo">
-                <h3>HTML</h3>
-            </div>
-            <div title="CSS" class="skill-card">
-                <img class="skill-img" src="images/css-3.png" alt="CSS Logo">
-                <h3>CSS</h3>
-            </div>
-            <div title="JavaScript" class="skill-card">
-                <img class="skill-img" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-                    alt="JavaScript-logo">
-                <h3>JavaScript</h3>
-            </div>
-            <!-- <div title="About" class="skill-card">
-                <img class="skill-img" src="images/react.png" alt="">
-                <h3>React</h3>
-            </div> -->
-            <div title="About" class="skill-card">
-                <img class="skill-img"
-                    src="https://play-lh.googleusercontent.com/kaox1VteLsWAuNxPxhm8t4llaoyFhxzDjo9g4Hdf92bKdT_Sn6Yrdku6rApuc5ktirw"
-                    alt="Adobe XD logo">
-                <h3>Adobe XD</h3>
-            </div>
-            <div title="Figma" class="skill-card">
-                <img class="skill-img" src="images/figma.png" alt="Figma Logo">
-                <h3>Figma</h3>
-            </div>
-
-        </div>
-    </div>
-    <!-- Works -->
-    <div id="works">
-        <h2>Works</h2>
-
-        <!-- Cards desktop -->
-        <div class="cards-lap">
+        <!-- Skills -->
+        <div id="skills" class="skills">
+            <h2>Skills</h2>
             <div class="cards">
-                <div class="work-card">
-                    <img class="works-img" src="images/itr.png" title="Isai Tamil Records" alt="isai tamil records">
-                    <a class="button" target="_blank" href="https://isaitamilrecords.com/"><button class="site-btn"><i
-                                class="fas fa-globe"></i>View site</button></a>
+                <div title="Flutter" class="skill-card">
+                    <img class="skill-img" src="images/flutter.png" alt="Flutter Logo">
+                    <h3>Flutter</h3>
                 </div>
-                <div class="work-card">
-                    <img class="works-img" src="images/voxxon home.png" title="Voxxon" alt="voxxon home">
-                    <a class="button" target="_blank" href="https://abishekmahi.github.io/voxxon"><button
-                            class="site-btn"><i class="fas fa-globe"></i>View site</button></a>
+                <div title="HTML" class="skill-card">
+                    <img class="skill-img" src="images/html-5.png" alt="HTML Logo">
+                    <h3>HTML</h3>
                 </div>
-                <div class="work-card">
-                    <img class="works-img" src="images/voxxon player.png" title="Voxxon Web Player" alt="voxxon player">
-                    <a class="button" target="_blank" href="https://abishekmahi.github.io/voxxon/webapp"><button
-                            class="site-btn"><i class="fas fa-globe"></i>View site</button></a>
+                <div title="CSS" class="skill-card">
+                    <img class="skill-img" src="images/css-3.png" alt="CSS Logo">
+                    <h3>CSS</h3>
                 </div>
-                <div class="work-card">
-                    <img class="works-img" src="images/kmm.png" title="k.M.Manoj" alt="K.M.Manoj">
-                    <a class="button" target="_blank" href="http://kmmanojkumar.com/"><button class="site-btn"><i
-                                class="fas fa-globe"></i>View
-                            site</button></a>
+                <div title="JavaScript" class="skill-card">
+                    <img class="skill-img" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                        alt="JavaScript-logo">
+                    <h3>JavaScript</h3>
                 </div>
+                <div title="About" class="skill-card">
+                    <img class="skill-img"
+                        src="https://play-lh.googleusercontent.com/kaox1VteLsWAuNxPxhm8t4llaoyFhxzDjo9g4Hdf92bKdT_Sn6Yrdku6rApuc5ktirw"
+                        alt="Adobe XD logo">
+                    <h3>Adobe XD</h3>
+                </div>
+                <div title="Figma" class="skill-card">
+                    <img class="skill-img" src="images/figma.png" alt="Figma Logo">
+                    <h3>Figma</h3>
+                </div>
+
             </div>
         </div>
+        <!-- Works -->
+        <div id="works">
+            <h2>Works</h2>
 
-        <!-- Cards mobile -->
-        <div class="cards-mob">
-            <div class="work-card">
-                <a class="weblink" target="_blank" href="https://isaitamilrecords.com/"><img class="works-img"
-                        src="images/itr.png" alt="Isai Tamil Records"></a>
+            <div class="work-cards">
+                <div title="Isai Tamil Records" class="container">
+                    <img src="images/itr.png" alt="Isai Tamil Records" class="works-img" style="width:100%">
+                    <div class="middle">
+                        <a target="_blank" href="https://isaitamilrecords.com/"><button class="site-btn"><i
+                                    class="fas fa-globe"></i>View site</button></a>
+                    </div>
+                </div>
+                <div title="Voxxon" class="container">
+                    <img src="images/voxxon home.png" alt="Voxxon" class="works-img" style="width:100%">
+                    <div class="middle">
+                        <a target="_blank" href="https://abishekmahi.github.io/voxxon/"><button class="site-btn"><i
+                                    class="fas fa-globe"></i>View site</button></a>
+                    </div>
+                </div>
+                <div title="Voxxon player" class="container">
+                    <img src="images/voxxon player.png" alt="Voxxon player" class="works-img" style="width:100%">
+                    <div class="middle">
+                        <a target="_blank" href="https://abishekmahi.github.io/voxxon/webapp"><button
+                                class="site-btn"><i class="fas fa-globe"></i>View site</button></a>
+                    </div>
+                </div>
+                <div title="K.M.Manojkumar" class="container">
+                    <img src="images/kmm.png" alt="K.M.Manojkumar" class="works-img" style="width:100%">
+                    <div class="middle">
+                        <a target="_blank" href="https://abishekmahi.github.io/kmmanojkumar/"><button
+                                class="site-btn"><i class="fas fa-globe"></i>View site</button></a>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+        <div id="contact">
+            <h2>Contact</h2>
+            <p>Things will change If you think in a positive way.</p>
+            <div class="form-row">
+                <lottie-player class="msg-lottie" src="https://assets1.lottiefiles.com/private_files/lf30_egxsy0o3.json"
+                    background="transparent" speed="1" loop autoplay>
+                </lottie-player>
+                <form action="mailto:abishekmas0807@gmail.com?subject=Messsege For You" autocomplete="on" method="POST"
+                    enctype="text/plain" onsubmit="location.href='thanks.html';">
+                    <div class="form-content">
+                        <label for="email">Email:</label>
+                        <input name="Your Email " type="email" required placeholder="Enter email">
+                    </div>
+                    <div class="form-content">
+                        <label for="mobile">Mobile Number:</label>
+                        <input name="Phone Number " type="tel" required placeholder="Enter mobile number">
+                    </div>
+                    <div class="form-content">
+                        <label for="messege">Messsge:</label>
+                        <textarea name="Message " required rows="4" placeholder="Write your message here..."
+                            cols="4"></textarea>
+                    </div>
+                    <div class="form-content submit">
+                        <input class="more-btn" type="submit" value="Submit">
+                    </div>
+                </form>
             </div>
-            <div class="work-card">
-                <a class="weblink" target="_blank" href="https://abishekmahi.github.io/voxxon"><img class="works-img"
-                        src="images/voxxon home.png" alt="voxxon home"></a>
+
+        </div>
+        <div class="bottom">
+            <div class="footlink">
+                <a class="footer-link li" href="https://www.linkedin.com/in/abishekmahi"><i
+                        class="fab fa-linkedin"></i>LinkedIn</a>
+                <a class="footer-link tw" href="https://twitter.com/AbishekMahi0708"><i class="fab fa-twitter"
+                        aria-hidden="true"></i>Twitter</a>
+                <a class="footer-link db" href="https://dribbble.com/abishekmahi"><i
+                        class="fab fa-dribbble"></i>Dribbble</a>
+                <a class="footer-link gh" href="https://github.com/AbishekMahi"><i class="fab fa-github"></i>Github</a>
+                <a class="footer-link ig" href="https://www.instagram.com/abishek_mahi"><i
+                        class="fab fa-instagram"></i>Instagram</a>
+                <a class="footer-link fb" href="https://facebook.com/AbishekMahi0708"><i
+                        class="fab fa-facebook"></i>Facebook</a>
             </div>
-            <div class="work-card">
-                <a class="weblink" target="_blank" href="https://abishekmahi.github.io/voxxon/webapp"><img
-                        class="works-img" src="images/voxxon player.png" alt="voxxon player"></a>
-            </div>
-            <div class="work-card">
-                <a class="weblink" target="_blank" href="http://kmmanojkumar.com/"><img class="works-img"
-                        src="images/kmm.png" alt="K.M.Manoj"></a>
-            </div>
+            <p>Copyright © <g id="year"></g> Abishek Mahendhiran. All Rights Reserved.</p>
+
         </div>
     </div>
 
-    <div id="contact">
-        <h2>Contact</h2>
-        <p>Things will change If you think in a positive way.</p>
-        <form action="mailto:abishekmas0807@gmail.com?subject=Messsege For You" autocomplete="on" method="POST"
-            enctype="text/plain" onsubmit="location.href='thanks.html';">
-            <div class="form-content">
-                <label for="email">Email:</label>
-                <input name="Your Email " type="email" required placeholder="Enter email">
-            </div>
-            <div class="form-content">
-                <label for="mobile">Mobile Number:</label>
-                <input name="Phone Number " type="tel" required placeholder="Enter mobile number">
-            </div>
-            <div class="form-content">
-                <label for="messege">Messsge:</label>
-                <textarea name="Message " required rows="5" placeholder="Write your message here..."
-                    cols="4"></textarea>
-            </div>
-            <div class="form-content submit">
-                <input class="more-btn" type="submit" value="Submit">
-            </div>
-        </form>
-    </div>
-    <div class="bottom">
-        <div class="footlink">
-            <a class="footer-link li" href="https://www.linkedin.com/in/abishekmahi"><i
-                    class="fab fa-linkedin"></i>LinkedIn</a>
-            <a class="footer-link tw" href="https://twitter.com/AbishekMahi0708"><i class="fab fa-twitter"
-                    aria-hidden="true"></i>Twitter</a>
-            <a class="footer-link db" href="https://dribbble.com/abishekmahi"><i
-                    class="fab fa-dribbble"></i>Dribbble</a>
-            <a class="footer-link gh" href="https://github.com/AbishekMahi"><i class="fab fa-github"></i>Github</a>
-            <a class="footer-link ig" href="https://www.instagram.com/abishek_mahi"><i
-                    class="fab fa-instagram"></i>Instagram</a>
-            <a class="footer-link fb" href="https://facebook.com/AbishekMahi0708"><i
-                    class="fab fa-facebook"></i>Facebook</a>
-        </div>
-        <p>Copyright © <g id="year"></g> Abishek Mahendhiran. All Rights Reserved.</p>
-
-    </div>
-
-    <!-- <div class="container">
-        <img src="images/Abi icon.png" alt="">
-    </div>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script>
-        $(window).on('load', function () {
-            $(".container").fadeOut("slow");
-        });
-    </script> -->
     <script src="https://kit.fontawesome.com/0b889a295e.js" crossorigin="anonymous"></script>
+
     <script>
         // Day and Night
         var daynight = document.getElementById("daynight");
@@ -266,25 +270,26 @@
         else if (hrs >= 17 && hrs <= 24)
             greet = 'Good Evening!';
         document.getElementById('autoGreetings').innerHTML = '<h3>' + greet + '</h3>';
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- 
-    <script>
-        //  typing text animation script
-        var typed = new Typed(".typing", {
-            strings: ["Abishek."],
-            typeSpeed: 100,
-            backSpeed: 60,
-            loop: false
-        });
-    </script> -->
-    <!-- year -->
-    <script>
+
+        // year change
         const d = new Date();
         let year = d.getFullYear();
         document.getElementById("year").innerHTML = year;
     </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        var myVar;
 
+        function loader() {
+            myVar = setTimeout(showPage);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("main").style.display = "block";
+        }
+    </script>
 </body>
 
 </html>
