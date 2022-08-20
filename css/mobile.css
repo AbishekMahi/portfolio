@@ -1,6 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 820px) {
+    .topcontent {
+        padding-top: 15%;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .shape:first-child {
+        left: 10px;
+        top: 45rem;
+    }
+
+    .shape:last-child {
+        left: 35%;
+        top: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
     * {
         margin: 0;
         padding: 0;
@@ -89,7 +109,7 @@
     }
 
     p {
-        font-size: 17px;
+        font-size: 18px;
         font-family: 'Jost', sans-serif;
     }
 
@@ -135,7 +155,7 @@
 
     /* about */
     #about {
-        margin: 0 5%;
+        margin: 0;
         padding-top: 8%;
         text-align: center;
     }
@@ -148,30 +168,49 @@
     }
 
     .profile-pic:hover {
-        /* width: 210px;
-        transition: width 300ms, height 300ms; */
         transform: scale(1.1);
     }
 
-    .lottie-row {
+    .abt-card,
+    .abt-txt {
         width: 100%;
-        margin: 10px auto;
     }
 
-    .lottie-row a {
-        margin: auto 5px;
+    .abt-txt {
+        text-align: center;
+        padding: 5% 0;
     }
 
-    .abt-lottie {
-        margin: auto 8px;
-        height: 65px;
-        width: 65px;
+    .background .shape {
+        height: 100px;
+        width: 100px;
+    }
+
+    .shape:first-child {
+        left: 10px;
+        top: 48rem;
+    }
+
+    .shape:last-child {
+        /* right: 0px; */
+        left: 70%;
+        top: 72rem;
+    }
+
+    .wrapper {
+        width: 80%;
+        padding: 20px 10px;
+        border-radius: 10px;
+    }
+
+    .wrapper:hover {
+        transform: scale(1);
     }
 
     /* Skills */
     #skills {
         margin: 0 1%;
-        padding-top: 10%;
+        padding-top: 4%;
     }
 
     .cards {
