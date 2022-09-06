@@ -282,9 +282,9 @@ span {
 }
 
 .shape:last-child {
-    background: linear-gradient( 45deg,
-    #ff822f,
-    #f01984);
+    background: linear-gradient(45deg,
+            #ff822f,
+            #f01984);
     left: 38%;
     top: 77rem;
 }
@@ -368,7 +368,7 @@ span {
 }
 
 .social-icons a:hover::before,
-.wrapper .icon:hover::before{
+.wrapper .icon:hover::before {
     content: "";
     position: absolute;
     top: 0;
@@ -639,6 +639,22 @@ label {
     text-align: center;
 }
 
+.thankyou_message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.thankyou_message h3 {
+    font-size: 2rem;
+}
+
+.thanks {
+    padding: 0 100px;
+}
+
 /* footer */
 .bottom {
     backdrop-filter: blur(15px);
@@ -696,14 +712,4 @@ label {
     text-align: center;
     font-size: 15px;
     padding: 20px 20px 10px;
-}
-
-.thanks {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Jost', sans-serif;
-    width: 100%;
-    height: 100vh;
 }

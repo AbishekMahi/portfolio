@@ -128,7 +128,8 @@
                     <p>Hello Guys 👋, this is Abishek Mahendhiran (Abishek Mahi). I am a Web Developer, App Developer,
                         UI/UX Designer and Independent Artist. I started my career as a YouTuber and as a Songwriter
                         during my college days. Until my college 3rd year I'm not even a programmer, then I started
-                        learning UI/UX to design the startup app idea that sticks in my mind. Later I tried to change that design
+                        learning UI/UX to design the startup app idea that sticks in my mind. Later I tried to change
+                        that design
                         to the working prototype and yes that's the point I started my web and mobile app developing
                         journey. As a freelancer I had worked in many projects I learned more from that.
                         Currently, I am working as a full time web developer and UI/UX designer.
@@ -222,8 +223,8 @@
                     </div>
                 </div>
             </div>
-
         </div>
+        <!-- contact -->
         <div id="contact">
             <h2>Contact</h2>
             <p>Things will change If you think in a positive way.</p>
@@ -231,23 +232,47 @@
                 <lottie-player class="msg-lottie" src="https://assets1.lottiefiles.com/private_files/lf30_egxsy0o3.json"
                     background="transparent" speed="1" loop autoplay>
                 </lottie-player>
-                <form action="mailto:abishekmas0807@gmail.com?subject=Messsege For You" autocomplete="on" method="POST"
-                    enctype="text/plain" onsubmit="location.href='thanks.html';">
-                    <div class="form-content">
-                        <label for="email">Email:</label>
-                        <input name="Your Email " type="email" required placeholder="Enter email">
+                <form class="gform pure-form pure-form-stacked" method="POST" data-email="abishekmas0708@gmail.com"
+                    action="https://script.google.com/macros/s/AKfycbxSwDF4gxDsz-myv-yreoQy7iJfExe3Rif_8zUSwtUOERcRe-FuumDPbSFWLwAOZZWL/exec">
+                    <div class="form-elements">
+
+                        <div class="form-content">
+                            <label for="name">Name:</label>
+                            <input name="name" type="text" required="" placeholder="Enter your Name">
+                        </div>
+                        <div class="form-content">
+                            <label for="email">Email:</label>
+                            <input name="email " type="email" required="" placeholder="Enter email">
+                        </div>
+                        <div class="form-content">
+                            <label for="mobile">Mobile Number:</label>
+                            <input name="phone" type="tel" required="" placeholder="Enter mobile number">
+                        </div>
+                        <div class="form-content">
+                            <label for="messege">Messsge:</label>
+                            <textarea name="message" required="" rows="4" placeholder="Write your message here..."
+                                cols="4"></textarea>
+                        </div>
+                        <br>
+                        <div class="form-content submit">
+                            <input class="more-btn" type="submit" value="Submit">
+                        </div>
                     </div>
-                    <div class="form-content">
-                        <label for="mobile">Mobile Number:</label>
-                        <input name="Phone Number " type="tel" required placeholder="Enter mobile number">
-                    </div>
-                    <div class="form-content">
-                        <label for="messege">Messsge:</label>
-                        <textarea name="Message " required rows="4" placeholder="Write your message here..."
-                            cols="4"></textarea>
-                    </div>
-                    <div class="form-content submit">
-                        <input class="more-btn" type="submit" value="Submit">
+                    <!-- -->
+                    <!-- Thankyou_message --><br>
+                    <div class="thankyou_message" style="display:none;">
+                        <center>
+                            <div class="thanks" style="padding: 0; width: 20rem;">
+                                <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_m3ixidnq.json"
+                                    background="transparent" speed="1" loop autoplay>
+                                </lottie-player>
+                            </div>
+                        </center>
+
+
+                        <h3>Thank You <br> Your form submitted succesfully.</h3>
+                        <br>
+                        <!-- <a href="index.html"><button class="more-btn">Submit again</button></a> -->
                     </div>
                 </form>
             </div>
@@ -271,7 +296,116 @@
 
         </div>
     </div>
+    <script data-cfasync="false" type="text/javascript">
+        (function () {
+            function validEmail(email) {
+                var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+                return re.test(email);
+            }
 
+            function validateHuman(honeypot) {
+                if (honeypot) {
+                    console.log("Robot Detected!");
+                    return true;
+                } else {
+                    console.log("Welcome Human!");
+                }
+            }
+
+            function getFormData(form) {
+                var elements = form.elements;
+
+                var fields = Object.keys(elements).filter(function (k) {
+                    return (elements[k].name !== "honeypot");
+                }).map(function (k) {
+                    if (elements[k].name !== undefined) {
+                        return elements[k].name;
+                    } else if (elements[k].length > 0) {
+                        return elements[k].item(0).name;
+                    }
+                }).filter(function (item, pos, self) {
+                    return self.indexOf(item) == pos && item;
+                });
+
+                var formData = {};
+                fields.forEach(function (name) {
+                    var element = elements[name];
+                    formData[name] = element.value;
+                    if (element.length) {
+                        var data = [];
+                        for (var i = 0; i < element.length; i++) {
+                            var item = element.item(i);
+                            if (item.checked || item.selected) {
+                                data.push(item.value);
+                            }
+                        }
+                        formData[name] = data.join(', ');
+                    }
+                });
+
+                // add form-specific values into the data
+                formData.formDataNameOrder = JSON.stringify(fields);
+                formData.formGoogleSheetName = form.dataset.sheet || "Sheet1"; // default sheet name
+                formData.formGoogleSendEmail = form.dataset.email ||
+                    ""; // no email by default
+
+                console.log(formData);
+                return formData;
+            }
+
+            function handleFormSubmit(event) {
+                event.preventDefault();
+                var form = event.target;
+                var data = getFormData(form);
+                if (data.email && !validEmail(data.email)) {
+                    var invalidEmail = form.querySelector(".email-invalid");
+                    if (invalidEmail) {
+                        invalidEmail.style.display = "block";
+                        return false;
+                    }
+                } else {
+                    disableAllButtons(form);
+                    var url = form.action;
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('POST', url);
+                    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                    xhr.onreadystatechange = function () {
+                        console.log(xhr.status, xhr.statusText);
+                        console.log(xhr.responseText);
+                        var formElements = form.querySelector(".form-elements")
+                        if (formElements) {
+                            formElements.style.display = "none"; // hide form
+                        }
+                        var thankYouMessage = form.querySelector(".thankyou_message");
+                        if (thankYouMessage) {
+                            thankYouMessage.style.display = "block";
+                        }
+                        return;
+                    };
+                    var encoded = Object.keys(data).map(function (k) {
+                        return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+                    }).join('&');
+                    xhr.send(encoded);
+                }
+            }
+
+            function loaded() {
+                console.log("Contact form submission handler loaded successfully.");
+                var forms = document.querySelectorAll("form.gform");
+                for (var i = 0; i < forms.length; i++) {
+                    forms[i].addEventListener("submit", handleFormSubmit, false);
+                }
+            };
+            document.addEventListener("DOMContentLoaded", loaded, false);
+
+            function disableAllButtons(form) {
+                var buttons = form.querySelectorAll("button");
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].disabled = true;
+                }
+            }
+        })();
+    </script>
     <script src="https://kit.fontawesome.com/0b889a295e.js" crossorigin="anonymous"></script>
 
     <script>
