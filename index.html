@@ -73,10 +73,9 @@
             <div id="home" class="topcontent">
                 <div class="toptext">
                     <h3 id="autoGreetings"></h3>
-                    <h1>I'm <span>Abishek Mahi</span></h1>
+                    <h1>I'm <span class="abi">Abishek Mahi</span></h1>
                     <p class="toppara">UI/UX Designer, Independent Artist, Web and App Developer.</p>
                     <a title="Get Resume" href="Abishek RESUME.pdf"><button class="getbtn">Get Resume</button></a>
-
                 </div>
                 <div class="topimg">
                     <img class="img1" src="images/developer.png" alt="">
@@ -96,8 +95,7 @@
                     <div class="wrapper">
                         <div class="img-area">
                             <div class="inner-area">
-                                <img title="Abishek Mahi"
-                                    src="https://media-exp1.licdn.com/dms/image/C5603AQFDRonquHK5cA/profile-displayphoto-shrink_800_800/0/1657896473963?e=1666224000&v=beta&t=rFO8W38o94v60Jz8-RBo0xPzc9642V3z2nsq8XBDQ-c"
+                                <img title="Abishek Mahi" src="https://i.postimg.cc/0jt0T6bY/Abishek-Mahi.jpg"
                                     alt="profile image">
                             </div>
                         </div>
@@ -138,23 +136,6 @@
             </div>
         </div>
 
-        <!-- <div class="lottie-row">
-                <a target="_blank" title="YouTube" href="https://www.youtube.com/c/AbishekMahi/">
-                    <lottie-player class="abt-lottie" src="https://assets3.lottiefiles.com/packages/lf20_qe6rfoqh.json"
-                        background="transparent" speed=".6" loop autoplay>
-                    </lottie-player>
-                </a>
-                <a target="_blank" title="Spotify" href="https://open.spotify.com/artist/6qub72ZQpOzA200OojDwg3">
-                    <lottie-player class="abt-lottie" src="https://assets4.lottiefiles.com/packages/lf20_ugylqlzx.json"
-                        background="transparent" speed=".7" loop autoplay>
-                    </lottie-player>
-                </a>
-                <a target="_blank" title="SoundCloud" href="https://soundcloud.com/abishekmahi">
-                    <lottie-player class="abt-lottie" src="https://assets6.lottiefiles.com/packages/lf20_05kpcpwb.json"
-                        background="transparent" speed="1" loop autoplay>
-                    </lottie-player>
-                </a>
-            </div> -->
         <!-- Skills -->
         <div id="skills" class="skills">
             <h2>Skills</h2>
@@ -238,7 +219,7 @@
 
                         <div class="form-content">
                             <label for="name">Name:</label>
-                            <input name="name" type="text" required="" placeholder="Enter your Name">
+                            <input name="name" type="text" id="name" required="" placeholder="Enter your Name">
                         </div>
                         <div class="form-content">
                             <label for="email">Email:</label>
@@ -255,7 +236,7 @@
                         </div>
                         <br>
                         <div class="form-content submit">
-                            <input class="more-btn" type="submit" value="Submit">
+                            <input id="button" onclick="myFunction()" class="more-btn" type="submit" value="Submit">
                         </div>
                     </div>
                     <!-- -->
@@ -268,9 +249,15 @@
                                 </lottie-player>
                             </div>
                         </center>
-
-
-                        <h3>Thank You <br> Your form submitted succesfully.</h3>
+                        <h3>Thank You, <span id="demo"></span>
+                            <script>
+                                function myFunction() {
+                                    var x = document.getElementById("name").value;
+                                    document.getElementById("demo").innerHTML = x;
+                                }
+                            </script>
+                            <br> Your form submitted succesfully.
+                        </h3>
                         <br>
                         <!-- <a href="index.html"><button class="more-btn">Submit again</button></a> -->
                     </div>
@@ -346,8 +333,7 @@
                 // add form-specific values into the data
                 formData.formDataNameOrder = JSON.stringify(fields);
                 formData.formGoogleSheetName = form.dataset.sheet || "Sheet1"; // default sheet name
-                formData.formGoogleSendEmail = form.dataset.email ||
-                    ""; // no email by default
+                formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
 
                 console.log(formData);
                 return formData;
@@ -399,7 +385,7 @@
             document.addEventListener("DOMContentLoaded", loaded, false);
 
             function disableAllButtons(form) {
-                var buttons = form.querySelectorAll("button");
+                var buttons = form.querySelectorAll("#button");
                 for (var i = 0; i < buttons.length; i++) {
                     buttons[i].disabled = true;
                 }
