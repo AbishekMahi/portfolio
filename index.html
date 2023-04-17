@@ -35,19 +35,20 @@
     <div style="display:none;" id="main">
 
         <!-- background img -->
-        <img class="lap-back" src="images/back.jpg" alt="">
-        <img class="mob-back" src="images/back mob.jpg" alt="">
+        <img class="lap-back" src="images/back.jpg" loading="lazy" alt="">
+        <img class="mob-back" src="images/back mob.jpg" loading="lazy" alt="">
 
         <!-- home -->
         <div class="top">
             <!-- navbar -->
             <nav>
-                <a class="logo" href=""><img src="images/Abi icon.png" title="Abishek Mahi Logo"
+                <a class="logo" href=""><img src="images/Abi icon.png" title="Abishek Mahi Logo" loading="lazy"
                         alt="Abishek_Mahi_logo"></a>
                 <ul>
                     <li><a title="About" href="index.html#about">About</a></li>
                     <li><a title="Skills" href="index.html#skills">Skills</a></li>
                     <li><a title="Works" href="index.html#works">Works</a></li>
+                    <li><a title="Songs" href="index.html#songs">Songs</a></li>
                     <li><a title="Contact" href="index.html#contact">Contact</a></li>
                 </ul>
                 <div title="Change Theme" class="nav-icons">
@@ -58,13 +59,14 @@
 
             <div class="menu_slider menu_close">
                 <div class="menu-open-top">
-                    <a class="logo" href=""><img src="images/Abi icon.png" alt="Abishek_Mahi_logo"></a>
+                    <a class="logo" href=""><img src="images/Abi icon.png" loading="lazy" alt="Abishek_Mahi_logo"></a>
                     <i id="menu_back" class="fas fa-times"></i>
                 </div>
                 <ul>
                     <li><a title="About" href="index.html#about">About</a></li>
                     <li><a title="Skills" href="index.html#skills">Skills</a></li>
                     <li><a title="Works" href="index.html#works">Works</a></li>
+                    <li><a title="Songs" href="index.html#songs">Songs</a></li>
                     <li><a title="Contact" href="index.html#contact">Contact</a></li>
                 </ul>
             </div>
@@ -79,7 +81,7 @@
                             Resume</button></a>
                 </div>
                 <div class="topimg">
-                    <img class="img1" src="images/developer.png" alt="">
+                    <img class="img1" src="images/developer.png" loading="lazy" alt="">
                 </div>
             </div>
         </div>
@@ -97,7 +99,7 @@
                         <div class="img-area">
                             <div class="inner-area">
                                 <img title="Abishek Mahi" src="https://i.postimg.cc/0jt0T6bY/Abishek-Mahi.jpg"
-                                    alt="profile image">
+                                    loading="lazy" alt="profile image">
                             </div>
                         </div>
 
@@ -124,7 +126,26 @@
                 </div>
 
                 <div class="abt-txt">
-                    <p>Hello Guys 👋, this is Abishek Mahendhiran (Abishek Mahi). I am a Web Developer, App Developer,
+                    <p>
+                        👋 Hey there, I'm Abishek Mahi - a Web and App Developer, UI/UX Designer, and Independent Music
+                        Artist extraordinaire! 🎨🚀📱<br>
+
+                        My creative journey started during my college days when I was an aspiring YouTuber, songwriter,
+                        and independent music artist. 🎶🎤 My passion for music eventually led me to imagine a startup
+                        app idea that I just had to bring to life. That's when I discovered my true calling as a Web and
+                        App Developer, and UI/UX Designer. 💡📲🎨<br>
+
+                        Since then, I've learned everything there is to know about UI/UX design and delved headfirst
+                        into web and mobile app development. I've worked on exciting projects as a freelancer and
+                        eventually transitioned into a full-time web developer and UI/UX designer. 🔨💻🌟 <br>
+
+                        As an Engineering Student, I'm always learning and expanding my skills to create fresh,
+                        innovative designs that push the boundaries of what's possible. 🤓📚💥 <br>
+
+                        If you're looking for a passionate and talented designer and developer who's not afraid to think
+                        outside the box, you've come to the right place. Let's create something amazing together! 🤝✨
+                    </p>
+                    <!-- <p>Hello Guys 👋, this is Abishek Mahendhiran (Abishek Mahi). I am a Web Developer, App Developer,
                         UI/UX Designer and Independent Artist. I started my career as a YouTuber and as a Songwriter
                         during my college days. Until my college 3rd year I'm not even a programmer, then I started
                         learning UI/UX to design the startup app idea that sticks in my mind. Later I tried to change
@@ -132,7 +153,14 @@
                         to the working prototype and yes that's the point I started my web and mobile app developing
                         journey. As a freelancer I had worked in many projects I learned more from that.
                         Currently, I am working as a full time web developer and UI/UX designer.
-                        <br> But as an Engineering Student, I learn a lot every day!</p>
+                        <br> But as an Engineering Student, I learn a lot every day!</p> 
+                    Hello Guys, this is Abishek Mahendhiran (Abishek Mahi). I am a Web Developer, App Developer,
+                    UI/UX Designer and the Founder of India Music Label “Isai Tamil Records”.
+                    Main motto of our company is to help independent artists and content creators through worldwide.
+                    I started my career as a YouTuber and as a Songwriter. But I can't promote Myself as a content
+                    creator. Then I Started My new independent Record Label (Isai Tamil Records) to help to distribute
+                    and promote the independent artist's songs and albums.
+                    But as an Engineering Student, I learn a lot every day!-->
                 </div>
             </div>
         </div>
@@ -142,81 +170,133 @@
             <h2>Skills</h2>
             <div class="cards">
                 <div title="Flutter" class="skill-card">
-                    <img class="skill-img" src="images/flutter.png" alt="Flutter Logo">
+                    <img class="skill-img" src="images/flutter.png" loading="lazy" alt="Flutter Logo">
                     <h3>Flutter</h3>
                 </div>
                 <div title="Firebase" class="skill-card">
-                    <img class="skill-img" src="images/firebase.png" alt="Firebase Logo">
+                    <img class="skill-img" src="images/firebase.png" loading="lazy" alt="Firebase Logo">
                     <h3>Firebase</h3>
                 </div>
                 <div title="HTML" class="skill-card">
-                    <img class="skill-img" src="images/html-5.png" alt="HTML Logo">
+                    <img class="skill-img" src="images/html-5.png" loading="lazy" alt="HTML Logo">
                     <h3>HTML</h3>
                 </div>
                 <div title="CSS" class="skill-card">
-                    <img class="skill-img" src="images/css-3.png" alt="CSS Logo">
+                    <img class="skill-img" src="images/css-3.png" loading="lazy" alt="CSS Logo">
                     <h3>CSS</h3>
                 </div>
                 <div title="JavaScript" class="skill-card">
                     <img class="skill-img" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-                        alt="JavaScript-logo">
+                        loading="lazy" alt="JavaScript-logo">
                     <h3>JavaScript</h3>
                 </div>
                 <div title="About" class="skill-card">
                     <img class="skill-img"
                         src="https://play-lh.googleusercontent.com/kaox1VteLsWAuNxPxhm8t4llaoyFhxzDjo9g4Hdf92bKdT_Sn6Yrdku6rApuc5ktirw"
-                        alt="Adobe XD logo">
+                        loading="lazy" alt="Adobe XD logo">
                     <h3>Adobe XD</h3>
                 </div>
                 <div title="Figma" class="skill-card">
-                    <img class="skill-img" src="images/figma.png" alt="Figma Logo">
+                    <img class="skill-img" src="images/figma.png" loading="lazy" alt="Figma Logo">
                     <h3>Figma</h3>
                 </div>
             </div>
         </div>
+
         <!-- Works -->
         <div id="works">
             <h2>Works</h2>
 
             <div class="work-cards">
                 <div title="Isai Tamil Records" class="container">
-                    <img src="images/itr.png" alt="Isai Tamil Records" class="works-img" style="width:100%">
+                    <img src="images/itr.png" loading="lazy" alt="Isai Tamil Records" class="works-img"
+                        style="width:100%">
                     <div class="middle">
                         <a target="_blank" href="https://isaitamilrecords.com/"><button class="site-btn"><i
                                     class="fas fa-globe"></i>View site</button></a>
                     </div>
                 </div>
                 <div title="Voxxon" class="container">
-                    <img src="images/voxxon home.png" alt="Voxxon" class="works-img" style="width:100%">
+                    <img src="images/voxxon home.png" loading="lazy" alt="Voxxon" class="works-img" style="width:100%">
                     <div class="middle">
                         <a target="_blank" href="https://abishekmahi.github.io/voxxon/"><button class="site-btn"><i
                                     class="fas fa-globe"></i>View site</button></a>
                     </div>
                 </div>
                 <div title="Classic Kitchen Landing" class="container">
-                    <img src="images/ck.png" alt="Classic Kitchen Landing" class="works-img" style="width:100%">
+                    <img src="images/ck.png" loading="lazy" alt="Classic Kitchen Landing" class="works-img"
+                        style="width:100%">
                     <div class="middle">
                         <a target="_blank" href="https://classickitchen.in/interiorDesigner/"><button
                                 class="site-btn"><i class="fas fa-globe"></i>View site</button></a>
                     </div>
                 </div>
                 <div title="Voxxon player" class="container">
-                    <img src="images/voxxon player.png" alt="Voxxon player" class="works-img" style="width:100%">
+                    <img src="images/voxxon player.png" loading="lazy" alt="Voxxon player" class="works-img"
+                        style="width:100%">
                     <div class="middle">
                         <a target="_blank" href="https://abishekmahi.github.io/voxxon/webapp"><button
                                 class="site-btn"><i class="fas fa-globe"></i>View site</button></a>
                     </div>
                 </div>
                 <div title="K.M.Manojkumar" class="container">
-                    <img src="images/kmm.png" alt="K.M.Manojkumar" class="works-img" style="width:100%">
+                    <img src="images/kmm.png" loading="lazy" alt="K.M.Manojkumar" class="works-img" style="width:100%">
                     <div class="middle">
                         <a target="_blank" href="https://abishekmahi.github.io/kmmanojkumar/"><button
                                 class="site-btn"><i class="fas fa-globe"></i>View site</button></a>
                     </div>
                 </div>
-
             </div>
         </div>
+
+        <!-- music -->
+        <div id="songs">
+            <h2>My Songs</h2>
+            <div class="abt-row">
+                <div class="abt-card ">
+                    <div class="vid-cont">
+                        <iframe class="video" src="https://www.youtube.com/embed/QVRit_WzZxk" frameborder="0"
+                            allowfullscreen></iframe></div>
+                </div>
+                <div class="abt-txt" style="text-align: center;">
+                    <h3>Listen Now</h3>
+                    <div class="music-icons">
+                        <a title="Spotify" target="_blank"
+                            href="https://open.spotify.com/track/58VwCBQbj6N4i6i3Av7UdQ"><img width="40" loading="lazy"
+                                src="https://cdn-icons-png.flaticon.com/512/174/174872.png" alt="spotify"></a>
+                        <a title="Apple Music" target="_blank"
+                            href="https://music.apple.com/in/album/dhooram-pogindrai-feat-sibi-chakravarthi/1580180527?i=1580180529"><img
+                                width="40" loading="lazy" src="https://music.apple.com/assets/favicon/favicon-180.png"
+                                alt="Apple music"></a>
+                        <a title="YouTube Music" target="_blank"
+                            href="https://music.youtube.com/watch?v=7m4AQy1QlSA&feature=share"><img width="40"
+                                loading="lazy" src="https://music.youtube.com/img/favicon_144.png"
+                                alt="YouTube music"></a>
+                        <a title="JioSaavn" target="_blank"
+                            href="https://www.jiosaavn.com/song/Dhooram-Pogindrai/SAkOQEBAdQQ?autoplay=enabled"><img
+                                width="40" loading="lazy" src="images/jiosaavn.svg" alt="JioSaavn"></a>
+                        <a title="Wynk Music" target="_blank"
+                            href="https://wynk.in/music/song/dhooram-pogindrai/ab_5059552189744_UKJ8H2103069?autoplay=true"><img
+                                width="40" loading="lazy"
+                                src="https://wynk.in/_next/static/media/icon-384x384.522e458f.png" alt="Wynk Music"></a>
+                        <a title="Amazon Music" target="_blank"
+                            href="https://music.amazon.in/albums/B09BTS335G?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN&ref=dm_sh_hpgSBMvBPkhGOAHQVIcrjnPWR"><img
+                                width="40" loading="lazy"
+                                src="https://d5fx445wy2wpk.cloudfront.net/icons/amznMusic_favicon.png"
+                                alt="Amazon Music"></a>
+                        <a title="Resso" target="_blank" href="https://m.resso.com/Zs8Lc1W1x/"><img width="40"
+                                loading="lazy" src="https://lf16-fe.resso.me/obj/anote-fe/img/favicon-resso-renew.png"
+                                alt="Apple music"></a>
+
+                    </div> <br>
+                    <p>Hey there! 🎵 As an independent music artist, I've got some tunes to share with you. Check out my
+                        latest song on YouTube and let me know what you think. 🎶If you prefer to listen to music on
+                        other platforms, you can find me on Spotify, Apple Music, and SoundCloud too! 🎧🎶</p>
+                </div>
+            </div>
+
+        </div>
+
         <!-- contact -->
         <div id="contact">
             <h2>Contact</h2>
