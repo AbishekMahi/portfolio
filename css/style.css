@@ -450,8 +450,7 @@ h2 {
 
 /* skills */
 #skills {
-    margin: 0 8%;
-    padding-top: 7.5%;
+    padding: 7.5% 5% 2%;
 }
 
 .cards {
@@ -500,8 +499,7 @@ h3 {
 }
 
 #works {
-    padding: 0 2%;
-    padding-top: 7.5%;
+    padding: 7.5% 5% 2%;
 }
 
 .work-cards {
@@ -557,8 +555,8 @@ h3 {
 
 .site-btn {
     margin: 0;
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: 8px 20px;
+    font-size: 16px;
     font-weight: 400;
     font-family: 'Jost', sans-serif;
     color: #ffffff;
